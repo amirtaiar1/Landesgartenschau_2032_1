@@ -5,7 +5,10 @@
 # Hallo zusammen & herzlich willkommen!
 
 ## Einleitung
-Mein Name ist **Amir Taiari** & ich studiere derzeit Wirtschaftsinformatik :)
+
+![This is an image](/img/Logo.png)
+
+Mein Name ist **Amir Taiari** & ich studiere derzeit Wirtschaftsinformatik :) 
 Mithilfe dieser Webseite möchte ich Sie auf unsere Veranstaltung aufmerksam machen.
 
 ## Konzept
@@ -24,5 +27,3 @@ Mithilfe dieser Webseite möchte ich Sie auf unsere Veranstaltung aufmerksam mac
 
 
 ## Feinplanung
-
-
