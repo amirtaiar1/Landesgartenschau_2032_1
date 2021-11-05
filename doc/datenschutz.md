@@ -26,6 +26,11 @@ Sie können diese Datenschutzerklärung jederzeit speichern und ausdrucken.
 ## Zwecke der Verarbeitung
 Wir verwenden personenbezogene Daten allein zum Zweck des Betriebs der Landesgartenschau-Webseiten.
 
+## Rechtsgrundlage der Verarbeitung
+
+## Speicherdauer
+
+
 ## Diese Daten verwenden wir
 - Name und URL der abgerufenen Datei
 - Datum und Uhrzeit des Abrufs
