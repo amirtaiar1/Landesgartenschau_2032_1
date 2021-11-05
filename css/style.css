@@ -1,6 +1,11 @@
-
-
-
 .body {
-    background-color: gray;
-} 
+    background-color: rgb(99, 99, 99);
+    color: aliceblue;
+}
+.dropdownmenu {
+    background-color: rgb(99, 99, 99);
+    color: aliceblue;
+}
+.footer {
+    text-align: center;
+}
