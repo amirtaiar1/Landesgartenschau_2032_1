@@ -27,3 +27,14 @@ Mithilfe dieser Webseite möchte ich Sie auf unsere Veranstaltung aufmerksam mac
 
 
 ## Feinplanung
+- [Allerlei](doc/allerlei.md) 
+- [Datenschutz](doc/datenschutz.md)
+- [ErklärungBF](doc/erklaerungBF.md)
+- [Impressum](doc/impressum.md)
+- [Index](doc/index.md)
+- [Infothek](doc/infothek.md)
+- [Kontakt](doc/kontakt.md)
+- [Mein Konto](doc/meinKonto.md)
+- [Suche](doc/suche.md)
+- [Veranstaltungen](doc/veranstaltungen.md)
+- [Vision](doc/vision.md)
