@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-![This is an image](/img/Logo.png)
+![This is an image](/image/Logo.png)
 
 Mein Name ist **Amir Taiari** & ich studiere derzeit Wirtschaftsinformatik! :) 
 Mithilfe dieser Webseite möchte ich Sie auf unsere Veranstaltung aufmerksam machen.
