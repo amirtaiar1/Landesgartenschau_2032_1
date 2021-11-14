@@ -1,29 +1,84 @@
 body {
     /* hier wird das hintergrundbild festgelegt */
-    background-image: url(../image/inspiration/2029165.jpg);
+    background-image: url(../image/inspiration/Wallpaper.jpg);
     /* Abstand zur rechten und linken seite bestimmen */
     margin-left: 20px;
     margin-right: 20px;
     /* Schriftfarbe ändern, um den Text besser lesen zu können*/
     color: rgb(255, 255, 255);
 }
-
+/* Die Box um Bilder und deren Überschriften erstellen 
+und damit auch einen Rahmen erzeugen*/
 .user_boxlist {
-    background-color:rgb(60, 189, 0);
+    
+    background-color:rgb(0, 3, 189);
     display: inline-flex;
     flex-wrap: wrap;
     text-align: center;
     border-style: solid;
-    border-width: 5px;
-    border-color: aqua;
-    
-
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
 }
+
 .user_image {
-    border-style: solid;
     display: flex;
-}
-.user_box_header {
-    background-color: blue;
+    border-style: solid;
+    border-color: black;
 
 }
+
+
+
+
+.user_box {
+    padding: 10px;
+}
+.user_blue img {
+    background-color: rgb(0, 132, 255);
+}
+.user_yellow img{
+    background-color: yellow;
+}
+.user_green img {
+    background-color: green;
+}
+.user_red img {
+    background-color: red;
+}
+.user_pink img {
+    background-color: pink;
+}
+
+
+
+.user_quote_content {
+    font-style: italic;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.user_quote_date {
+    font-style:unset;
+    color: blueviolet;
+    font-size: 15px;
+}
+
+.user_quote_comments {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user_quote_tag {
+    font-weight:lighter;
+    font-stretch:extra-expanded;
+    color: rgb(81, 202, 211);
+}
+.user_quote_author {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: coral;
+}
+
+/* Ändern Sie die Schriftart der Zitate in Kursiv und wählen Sie für die Tags,
+Kommentare, Datum und Autor je eine andere, passende Schriftart, Style, Größe,
+etc */ 
