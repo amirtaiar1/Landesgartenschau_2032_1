@@ -1,9 +1,11 @@
 body {
+    /* hier wird das hintergrundbild festgelegt */
     background-image: url(../image/inspiration/2029165.jpg);
+    /* Abstand zur rechten und linken seite bestimmen */
     margin-left: 20px;
     margin-right: 20px;
+    /* Schriftfarbe ändern, um den Text besser lesen zu können*/
     color: rgb(255, 255, 255);
-
 }
 
 .user_boxlist {
