@@ -1,0 +1,27 @@
+body {
+    background-image: url(../image/inspiration/2029165.jpg);
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+.user_boxlist {
+    background-color:rgb(60, 189, 0);
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: aqua;
+    
+
+}
+.user_image {
+    border-style: solid;
+    display: flex;
+}
+.user_box_header {
+    background-color: blue;
+
+}
