@@ -36,22 +36,17 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
-
-
 </head>
-
 <body class="body">
     <div class="container">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
                 <a class="navbar-brand" href="index.html"><img src="../image/Logo.png" alt="Logo"></a>
                 <!--in diesem HTML-Element soll das Logo als Bild-Element integriert werden-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul id="nav_1" class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="index.html">LG_Gesamt </a></li>
@@ -85,32 +80,110 @@
             </nav>
         </header>
         <main>
-            <!-- Hauptteil-->
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-LG_Gesamt-tab" data-bs-toggle="tab" data-bs-target="#nav-LG_Gesamt" type="button" role="tab" aria-controls="nav-LG_Gesamt" aria-selected="true">LG Gesamt</button>
                     <button class="nav-link" id="nav-LG_Nord-tab" data-bs-toggle="tab" data-bs-target="#nav-LG_Nord" type="button" role="tab" aria-controls="nav-LG_Nord" aria-selected="false">LG Nord</button>
-                    <button class="nav-link" id="nav-LG_Ost-tab" data-bs-toggle="tab" data-bs-target="#nav-LG_Ost" type="button" role="tab" aria-controls="nav-LG_Ost" aria-selected="false">LG LG_Ost</button>
-                    <button class="nav-link" id="nav-LG_West-tab1" data-bs-toggle="tab" data-bs-target="#nav-LG_West" type="button" role="tab" aria-controls="nav-LG_West" aria-selected="false">LG West</button>
-                  </div>
+                    <button class="nav-link" id="nav-LG_Ost-tab" data-bs-toggle="tab" data-bs-target="#nav-LG_Ost" type="button" role="tab" aria-controls="nav-LG_Ost" aria-selected="false">LG Ost</button>
+                    <button class="nav-link" id="nav-LG_West-tab" data-bs-toggle="tab" data-bs-target="#nav-LG_West" type="button" role="tab" aria-controls="nav-LG_West" aria-selected="false">LG West</button>
+                </div>
               </nav>
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-LG_Gesamt" role="tabpanel" aria-labelledby="nav-LG_Gesamt-tab"><h1>Lageplan- Gesamt</h1>
-                    <img alt="" src="../image/Lageplaene/LG_Gesamt.PNG" usemap="#image-map"/>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-LG_Gesamt" role="tabpanel" aria-labelledby="nav-LG_Gesamt-tab"><h1>Lageplan- Gesamt</h1>
+                        <img alt="Karte-LG_Gesamt" src="../image/Lageplaene/LG_Gesamt.PNG" usemap="#image-map">
+                        <map name="image-map">
+                            <area target="_self" alt="Area1" title="Area A" href="#" coords="200,43,284,18,298,64,314,96,328,162,336,167,343,190,339,195,371,307,380,304,391,337,384,340,385,360,383,368,331,385,315,372,303,328,314,323,287,258,279,229,262,161,246,126,253,152,236,87,216,93" shape="poly">
+                            <area target="_self" alt="Area2" title="Area B" href="#" coords="330,389,537,327,554,351,588,462,583,469,625,558,600,569,585,535,562,543,569,570,525,603,404,628" shape="poly">
+                            <area target="_self" alt="Area3" title="Area C" href="#" coords="584,468,610,454,697,489,692,524,702,527,700,542,710,560,801,546,807,578,807,597,765,617,782,643,760,671,792,710,789,744,774,749,638,586,642,577,615,536" shape="poly">
+                        </map>
+                    </div>
 
-                    
-                    <img src="LG_Gesamt.PNG" usemap="#image-map">
-
-                    <map name="image-map">
-                        <area target="" alt="Area1" title="Area1" href="#" coords="200,43,284,18,298,64,314,96,328,162,336,167,343,190,339,195,371,307,380,304,391,337,384,340,385,360,383,368,331,385,315,372,303,328,314,323,287,258,279,229,262,161,246,126,253,152,236,87,216,93" shape="poly">
-                        <area target="" alt="Area2" title="Area2" href="#" coords="330,389,537,327,554,351,588,462,583,469,625,558,600,569,585,535,562,543,569,570,525,603,404,628" shape="poly">
-                        <area target="" alt="Area3" title="Area3" href="#" coords="584,468,610,454,697,489,692,524,702,527,700,542,710,560,801,546,807,578,807,597,765,617,782,643,760,671,792,710,789,744,774,749,638,586,642,577,615,536" shape="poly">
+                <div class="tab-pane fade" id="nav-LG_Nord" role="tabpanel" aria-labelledby="nav-LG_Nord-tab"><h1>Lageplan- Nord</h1>                  
+                    <img src=../image/lageplaene/LG_Nord.png alt="Karte-Nord" usemap="#image-map2">
+                    <map name="image-map2">
+                        <area target="_self" alt="Kinzigpark" title="Kinzigpark" href="http://141.79.64.139/cstippek/FormCheck.php?wert=B" coords="355,618,41" shape="circle">
+                        <area target="_self" alt="Vorplatz Messe/Flussterrasse" title="Vorplatz Messe/Flussterrasse" href="http://141.79.64.139/cstippek/FormCheck.php?wert=1" coords="737,321,18" shape="circle">
+                        <area target="_self" alt="Leihradstation &quot;Tour Bellevue Nord&quot;" title="Leihradstation &quot;Tour Bellevue Nord&quot;" href="http://141.79.64.139/cstippek/FormCheck.php?wert=2" coords="595,372,20" shape="circle">
+                        <area target="_self" alt="Burda Terrasse" title="Burda Terrasse" href="http://141.79.64.139/cstippek/FormCheck.php?wert=3" coords="690,382,18" shape="circle">
+                        <area target="_self" alt="Neue Fuß- und Radwegbrücke" title="Neue Fuß- und Radwegbrücke" href="http://141.79.64.139/cstippek/FormCheck.php?wert=5" coords="410,564,15" shape="circle">
+                        <area target="_self" alt="Wasserzugänge an Kinzigpromenade " title="Wasserzugänge an Kinzigpromenade " href="http://141.79.64.139/cstippek/FormCheck.php?wert=6" coords="295,477,19" shape="circle">
+                        <area target="_self" alt="Kinzigpromenade" title="Kinzigpromenade" href="http://141.79.64.139/cstippek/FormCheck.php?wert=7" coords="597,571,16" shape="circle">
+                        <area target="_self" alt="Aktionsnischen an der Promenade" title="Aktionsnischen an der Promenade" href="http://141.79.64.139/cstippek/FormCheck.php?wert=8" coords="691,520,16" shape="circle">
+                        <area target="_self" alt="Furt" title="Furt" href="http://141.79.64.139/cstippek/FormCheck.php?wert=9" coords="525,648,16" shape="circle">
+                        <area target="_self" alt="Gastro Foodtruck" title="Gastro Foodtruck" href="http://141.79.64.139/cstippek/FormCheck.php?wert=10" coords="751,676,17" shape="circle">
+                        <area target="_self" alt="Gastro im Sportvillon " title="Gastro im Sportvillon " href="http://141.79.64.139/cstippek/FormCheck.php?wert=11" coords="562,812,20" shape="circle">
+                        <area target="_self" alt="Bewegung im Klimawald" title="Bewegung im Klimawald" href="http://141.79.64.139/cstippek/FormCheck.php?wert=12" coords="627,844,18" shape="circle">
+                        <area target="_self" alt="Ausstellung Fortwirtschaft" title="Ausstellung Fortwirtschaft" href="http://141.79.64.139/cstippek/FormCheck.php?wert=13" coords="702,784,19" shape="circle">
+                        <area target="_self" alt="Wechselflor" title="Wechselflor" href="http://141.79.64.139/cstippek/FormCheck.php?wert=14" coords="815,764,17" shape="circle">
+                        <area target="_self" alt="Themengärten Ausblick am Wasser" title="Themengärten Ausblick am Wasser" href="http://141.79.64.139/cstippek/FormCheck.php?wert=15" coords="790,569,19" shape="circle">
+                        <area target="_self" alt="Flutwiesen/Strandbereich" title="Flutwiesen/Strandbereich" href="http://141.79.64.139/cstippek/FormCheck.php?wert=16" coords="859,562,20" shape="circle">
+                        <area target="_self" alt="Themengärten" title="Themengärten" href="http://141.79.64.139/cstippek/FormCheck.php?wert=17" coords="855,457,18" shape="circle">
+                        <area target="_self" alt="Eingang mit Kasse und Ausgang" title="Eingang mit Kasse und Ausgang" href="http://141.79.64.139/cstippek/FormCheck.php?wert=40" coords="811,247,26" shape="circle">
+                        <area target="_self" alt="Nur Ausgang" title="Nur Ausgang" href="http://141.79.64.139/cstippek/FormCheck.php?wert=42" coords="342,406,29" shape="circle">
+                        <area target="_self" alt="Neuer Bahnhaltepunkt" title="Neuer Bahnhaltepunkt" href="http://141.79.64.139/cstippek/FormCheck.php?wert=43" coords="756,248,25" shape="circle">
+                        <area target="_self" alt="Haltepunkt Stadtbuslinie" title="Haltepunkt Stadtbuslinie" href="http://141.79.64.139/cstippek/FormCheck.php?wert=44" coords="820,45,32" shape="circle">
+                        <area target="_self" alt="Haltepunkt Busshuttle" title="Haltepunkt Busshuttle" href="http://141.79.64.139/cstippek/FormCheck.php?wert=45" coords="746,183,29" shape="circle">
+                        <area target="_self" alt="Fahrradstellplätze Veranstalter/Aussteller " title="Fahrradstellplätze Veranstalter/Aussteller " href="http://141.79.64.139/cstippek/FormCheck.php?wert=47" coords="704,249,27" shape="circle">
+                        <area target="_self" alt="Wechselflor" title="Wechselflor" href="http://141.79.64.139/cstippek/FormCheck.php?wert=4" coords="571,505,20" shape="circle">
+                        <area target="_self" alt="Wechselflor" title="Wechselflor" href="http://141.79.64.139/cstippek/FormCheck.php?wert=4" coords="804,666,18" shape="circle">
+                        <area target="_self" alt="Wechselflor" title="Wechselflor" href="http://141.79.64.139/cstippek/FormCheck.php?wert=4" coords="962,706,17" shape="circle">
+                        <area target="_self" alt="Nur Ausgang" title="Nur Ausgang" href="http://141.79.64.139/cstippek/FormCheck.php?wert=42" coords="498,897,28" shape="circle">
+                        <area target="_self" alt="Eingang mit Kasse und Ausgang" title="Eingang mit Kasse und Ausgang" href="http://141.79.64.139/cstippek/FormCheck.php?wert=40" coords="870,788,26" shape="circle">
+                        <area target="_self" alt="Haltepunkt Busshuttle" title="Haltepunkt Busshuttle" href="http://141.79.64.139/cstippek/FormCheck.php?wert=45" coords="921,789,26" shape="circle">
+                        <area target="_self" alt="Fahrradstellplätze Veranstalter/Aussteller " title="Fahrradstellplätze Veranstalter/Aussteller " href="http://141.79.64.139/cstippek/FormCheck.php?wert=47" coords="976,788,28" shape="circle">
+                        <area target="_self" alt="Haltepunkt Stadtbuslinie" title="Haltepunkt Stadtbuslinie" href="http://141.79.64.139/cstippek/FormCheck.php?wert=44" coords="840,836,25" shape="circle">
                     </map>
                 </div>
+                <div class="tab-pane fade" id="nav-LG_Ost" role="tabpanel" aria-labelledby="nav-LG_Ost-tab"><h1>Lageplan- Ost</h1>
+                    <img src=../image/lageplaene/LG_Ost.png alt="Karte-LG_Ost" usemap="#image-map3">
 
-                <div class="tab-pane fade" id="nav-LG_Nord" role="tabpanel" aria-labelledby="nav-LG_Nord-tab"><h1>Lageplan- Nord</h1><img src=../image/lageplaene/LG_Nord.png alt="Karte-Nord"></div>
-                <div class="tab-pane fade" id="nav-LG_Ost" role="tabpanel" aria-labelledby="nav-LG_Ost-tab"><h1>Lageplan- LG_Ost</h1><img src=../image/lageplaene/LG_LG_Ost.png alt="Karte-LG_Ost"></div>
-                <div class="tab-pane fade" id="nav-LG_West" role="tabpanel" aria-labelledby="nav-LG_West-tab"><h1>Lageplan- West</h1><img src=../image/lageplaene/LG_West.png alt="Karte-West"></div>
+                    <map name="image-map3">
+                        <area target="_self" alt="Vorplatz Messe/Flussterrasse" title="Vorplatz Messe/Flussterrasse" href="http://141.79.64.139/cstippek/FormCheck.php?wert=1" coords="326,173,17" shape="circle">
+                        <area target="_self" alt="Leihradstation &quot;Tour Bellevue Nord&quot;" title="Leihradstation &quot;Tour Bellevue Nord&quot;" href="http://141.79.64.139/cstippek/FormCheck.php?wert=2" coords="347,233,18" shape="circle">
+                        <area target="_self" alt="Burda Terrasse" title="Burda Terrasse" href="http://141.79.64.139/cstippek/FormCheck.php?wert=3" coords="465,206,17" shape="circle">
+                        <area target="_self" alt="Wechselflor" title="Wechselflor" href="http://141.79.64.139/cstippek/FormCheck.php?wert=4" coords="366,328,19" shape="circle">
+                        <area target="_self" alt="Neue Fuß- und Radwegbrücke" title="Neue Fuß- und Radwegbrücke" href="http://141.79.64.139/cstippek/FormCheck.php?wert=5" coords="504,289,19" shape="circle">
+                        <area target="_self" alt="Wasserzugänge an Kinzigpromenade " title="Wasserzugänge an Kinzigpromenade " href="http://141.79.64.139/cstippek/FormCheck.php?wert=6" coords="718,388,18" shape="circle">
+                        <area target="_self" alt="Kinzigpromenade" title="Kinzigpromenade" href="http://141.79.64.139/cstippek/FormCheck.php?wert=7" coords="593,390,23" shape="circle">
+                        <area target="_self" alt="Aktionsnischen an der Promenade" title="Aktionsnischen an der Promenade" href="http://141.79.64.139/cstippek/FormCheck.php?wert=8" coords="640,426,19" shape="circle">
+                        <area target="_self" alt="Furt" title="Furt" href="http://141.79.64.139/cstippek/FormCheck.php?wert=9" coords="568,444,21" shape="circle">
+                        <area target="_self" alt="Gastro Foodtruck" title="Gastro Foodtruck" href="http://141.79.64.139/cstippek/FormCheck.php?wert=10" coords="538,529,26" shape="circle">
+                        <area target="_self" alt="Gastro im Sportvillon" title="Gastro im Sportvillon" href="http://141.79.64.139/cstippek/FormCheck.php?wert=11" coords="659,518,21" shape="circle">
+                        <area target="_self" alt="Bewegung im Klimawald" title="Bewegung im Klimawald" href="http://141.79.64.139/cstippek/FormCheck.php?wert=12" coords="661,570,26" shape="circle">
+                        <area target="_self" alt="Ausstellung Fortwirtschaft" title="Ausstellung Fortwirtschaft" href="http://141.79.64.139/cstippek/FormCheck.php?wert=13" coords="708,701,27" shape="circle">
+                        <area target="_self" alt="Wechselflor" title="Wechselflor" href="http://141.79.64.139/cstippek/FormCheck.php?wert=14" coords="799,857,20" shape="circle">
+                        <area target="_self" alt="Eingang und Ausgang" title="Eingang und Ausgang" href="http://141.79.64.139/cstippek/FormCheck.php?wert=41" coords="392,405,36" shape="circle">
+                        <area target="_self" alt="Nur Ausgang" title="Nur Ausgang" href="http://141.79.64.139/cstippek/FormCheck.php?wert=42" coords="699,796,31" shape="circle">
+                        <area target="_self" alt="Räderbachinsel" title="Räderbachinsel" href="http://141.79.64.139/cstippek/FormCheck.php?wert=C" coords="764,512,48" shape="circle">
+                        <area target="_self" alt="Parkplatz Veranstalter/Aussteller" title="Parkplatz Veranstalter/Aussteller" href="http://141.79.64.139/cstippek/FormCheck.php?wert=46" coords="793,365,34" shape="circle">
+                    </map>
+                </div>
+                <div class="tab-pane fade" id="nav-LG_West" role="tabpanel" aria-labelledby="nav-LG_West-tab"><h1>Lageplan- West</h1>
+                    <img src=../image/lageplaene/LG_West.png alt="Karte-LG_West" usemap="#image-map4">
+                    <map name="image-map4">
+                        <area target="_self" alt="Vorplatz Messe/Flussterrasse" title="Vorplatz Messe/Flussterrasse" href="http://141.79.64.139/cstippek/FormCheck.php?wert=1" coords="82,213,14" shape="circle">
+                        <area target="_self" alt="Leihradstation &quot;Tour Bellevue Nord&quot;" title="Leihradstation &quot;Tour Bellevue Nord&quot;" href="http://141.79.64.139/cstippek/FormCheck.php?wert=2" coords="187,154,15" shape="circle">
+                        <area target="_self" alt="Burda Terrasse" title="Burda Terrasse" href="http://141.79.64.139/cstippek/FormCheck.php?wert=3" coords="232,331,18" shape="circle">
+                        <area target="_self" alt="Wechselflor" title="Wechselflor" href="http://141.79.64.139/cstippek/FormCheck.php?wert=4" coords="149,323,18" shape="circle">
+                        <area target="_self" alt="Wechselflor" title="Wechselflor" href="http://141.79.64.139/cstippek/FormCheck.php?wert=4" coords="260,675,19" shape="circle">
+                        <area target="_self" alt="Neue Fuß- und Radwegbrücke" title="Neue Fuß- und Radwegbrücke" href="http://141.79.64.139/cstippek/FormCheck.php?wert=5" coords="229,415,16" shape="circle">
+                        <area target="_self" alt="Wasserzugänge an Kinzigpromenade " title="Wasserzugänge an Kinzigpromenade " href="http://141.79.64.139/cstippek/FormCheck.php?wert=6" coords="206,493,18" shape="circle">
+                        <area target="_self" alt="Kinzigpromenade" title="Kinzigpromenade" href="http://141.79.64.139/cstippek/FormCheck.php?wert=7" coords="310,529,20" shape="circle">
+                        <area target="_self" alt="Aktionsnischen an der Promenade" title="Aktionsnischen an der Promenade" href="http://141.79.64.139/cstippek/FormCheck.php?wert=8" coords="386,737,20" shape="circle">
+                        <area target="_self" alt="Aktionsnischen an der Promenade" title="Aktionsnischen an der Promenade" href="http://141.79.64.139/cstippek/FormCheck.php?wert=8" coords="240,275,13" shape="circle">
+                        <area target="_self" alt="Aktionsnischen an der Promenade" title="Aktionsnischen an der Promenade" href="http://141.79.64.139/cstippek/FormCheck.php?wert=8" coords="159,390,20" shape="circle">
+                        <area target="_self" alt="Aktionsnischen an der Promenade" title="Aktionsnischen an der Promenade" href="http://141.79.64.139/cstippek/FormCheck.php?wert=8" coords="303,463,18" shape="circle">
+                        <area target="_self" alt="Furt" title="Furt" href="http://141.79.64.139/cstippek/FormCheck.php?wert=9" coords="309,661,17" shape="circle">
+                        <area target="_self" alt="Gastro Foodtruck" title="Gastro Foodtruck" href="http://141.79.64.139/cstippek/FormCheck.php?wert=10" coords="260,787,15" shape="circle">
+                        <area target="_self" alt="Urbane Kinzig" title="Urbane Kinzig" href="http://141.79.64.139/cstippek/FormCheck.php?wert=A" coords="335,373,44" shape="circle">
+                        <area target="_self" alt="Nur Ausgang" title="Nur Ausgang" href="http://141.79.64.139/cstippek/FormCheck.php?wert=42" coords="63,251,21" shape="circle">
+                        <area target="_self" alt="Eingang und Ausgang" title="Eingang und Ausgang" href="http://141.79.64.139/cstippek/FormCheck.php?wert=41" coords="217,175,22" shape="circle">
+                        <area target="_self" alt="Haltepunkt Stadtbuslinie" title="Haltepunkt Stadtbuslinie" href="http://141.79.64.139/cstippek/FormCheck.php?wert=44" coords="310,125,22" shape="circle">
+                        <area target="_self" alt="Haltepunkt Stadtbuslinie" title="Haltepunkt Stadtbuslinie" href="http://141.79.64.139/cstippek/FormCheck.php?wert=44" coords="373,75,24" shape="circle">
+
+                    </map>
+
+                </div>
               </div>
         </main>
         <footer class="footer">

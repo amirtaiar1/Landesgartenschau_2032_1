@@ -1,4 +1,14 @@
-.pic {display: block; text-align: center;}
+
+header {
+    margin-bottom: 15px;
+}
+body {
+    background-color: rgb(185, 185, 185);
+}
+.pic {
+    display: block; text-align: center;
+}
 footer {
     text-align: center;
+    margin-top: 50px;
 }
