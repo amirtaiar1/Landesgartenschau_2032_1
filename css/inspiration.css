@@ -18,7 +18,7 @@ und damit auch einen Rahmen erzeugen*/
     border-width: 2px;
     border-color: rgb(255, 255, 255);
 }
-
+/* Zeile 22 bis Zeile 48 -> Bestimmung der Hintergrundfarbe der Bilder*/ 
 .user_image {
     display: flex;
     border-style: solid;
@@ -27,6 +27,7 @@ und damit auch einen Rahmen erzeugen*/
 span.user_no_image {
     background-color: aliceblue;
 }
+/* Mit padding wird ein Abstand von 10 px zwischen den Rahmen gebildet*/
 .user_box {
     padding: 10px;
 }
@@ -47,7 +48,7 @@ span.user_no_image {
 }
 
 
-/* Zitate*/
+/* Anoassung der Zitate*/
 .user_quote_content {
     font-style: italic;
     font-size: 18px;

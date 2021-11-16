@@ -1,13 +1,16 @@
-
+/* Der Header bekommt hier einen Abstsand von 15 px zum Main */
 header {
     margin-bottom: 15px;
 }
+/* Hiermit wird die Hintergrundfarbe geändert und auf grau gestellt*/
 body {
     background-color: rgb(185, 185, 185);
 }
+/* Die Logos der Firmen werden hiermit zentriert. Sieht übersichtlicher und schöner aus */
 .pic {
     display: block; text-align: center;
 }
+/* Wie die logos, wird auch der Footer zentriert, außerdem wird ein Abstand von 50px zum Main gehalten.*/
 footer {
     text-align: center;
     margin-top: 50px;
