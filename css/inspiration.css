@@ -20,12 +20,9 @@ und damit auch einen Rahmen erzeugen*/
 }
 /* Zeile 22 bis Zeile 48 -> Bestimmung der Hintergrundfarbe der Bilder*/ 
 .user_image {
-    display: flex;
+    display: inline-block;
     border-style: solid;
     border-color: black;
-}
-span.user_no_image {
-    background-color: aliceblue;
 }
 /* Mit padding wird ein Abstand von 10 px zwischen den Rahmen gebildet*/
 .user_box {
@@ -46,7 +43,12 @@ span.user_no_image {
 .user_pink img {
     background-color: pink;
 }
-
+.user_empty .user_no_image {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px black;
+}
 
 /* Anoassung der Zitate*/
 .user_quote_content {
