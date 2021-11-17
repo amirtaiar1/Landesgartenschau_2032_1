@@ -11,6 +11,7 @@ body {
 und damit auch einen Rahmen erzeugen*/
 .user_boxlist {
     background-color:rgb(0, 3, 189);
+
     display: inline-flex;
     flex-wrap: wrap;
     text-align: center;
@@ -23,6 +24,9 @@ und damit auch einen Rahmen erzeugen*/
     display: inline-block;
     border-style: solid;
     border-color: black;
+    border-width: 4px;
+    width: 200px;
+    height: 200px;
 }
 /* Mit padding wird ein Abstand von 10 px zwischen den Rahmen gebildet*/
 .user_box {
@@ -43,14 +47,16 @@ und damit auch einen Rahmen erzeugen*/
 .user_pink img {
     background-color: pink;
 }
+/* Bestimmung der Größe der leeren Fläche und dessen Rahmen*/
 .user_empty .user_no_image {
     width: 200px;
     height: 200px;
     background-color: rgb(255, 255, 255);
-    border: solid 2px black;
+    border: solid 4px black;
+
 }
 
-/* Anoassung der Zitate*/
+/* Anpassung der Zitate*/
 .user_quote_content {
     font-style: italic;
     font-size: 18px;
