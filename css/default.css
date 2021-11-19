@@ -15,3 +15,15 @@ footer {
     text-align: center;
     margin-top: 50px;
 }
+.container_aussen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#rose {
+    width: 50%;
+}
+#video_bunny {
+    width: 50%;
+    height: 50%;
+}
