@@ -4,7 +4,7 @@ header {
 }
 /* Hiermit wird die Hintergrundfarbe geändert und auf grau gestellt*/
 body {
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(187, 187, 187);
 }
 /* Die Logos der Firmen werden hiermit zentriert. Sieht übersichtlicher und schöner aus */
 .pic {
@@ -15,10 +15,11 @@ footer {
     text-align: center;
     margin-top: 50px;
 }
+/*
 .container_aussen {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;r
 }
 #rose {
     width: 50%;
@@ -26,4 +27,41 @@ footer {
 #video_bunny {
     width: 50%;
     height: 50%;
+}
+*/
+.container_aussen {
+    display: flex; 
+    flex-direction: row;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.vid{
+    width: 50%; height:50%
+}
+.rose {
+    width: 102%; height: 100%;
+}
+.article1 {
+    text-align: left;
+    color: black;
+    font-weight: 500;
+}
+.card {
+    color: black;
+}
+.nav_right {
+    display: flex;
+    direction: rtl;
+
+
 }
