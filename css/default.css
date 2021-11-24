@@ -26,12 +26,17 @@ footer {
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 18px;
-    color: white
+    font-size: 22px;
+    color: rgb(255, 255, 255); 
+    font-weight: 750;
 }
 .rose{
+    /* ich weiß nicht warum, aber irgendwie haben das Bild und Video nicht die gleiche größe wenn ich beide auf 50% stelle. Deshalb 98% */
     width: 98%;
 }
 .vid { 
     width: 50%;
+}
+.sidebar {
+    float: right;
 }
