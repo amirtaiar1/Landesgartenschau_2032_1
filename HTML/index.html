@@ -36,13 +36,14 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
 
 <body class="body">
     <div class="container">
-        <header>
+        <header id="myDIV">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="index.html"><img src="../image/Logo.png" alt="Logo"></a>
                 <!--in diesem HTML-Element soll das Logo als Bild-Element integriert werden-->
@@ -84,7 +85,9 @@
             </nav>
         </header>
         <main>
+
             <div class="container_media">
+                
                 <video class="vid" muted controls >
                     <source src="../video/big_buck_bunny.mp4" type="video/mp4">
                 </video>
@@ -98,19 +101,26 @@
             </div>
             <div class="News_area">
                 <div class="sidebar">
-                    <audio controls> 
+                    <audio class="audio_keyboard" controls> 
                         <source src="../audio/keyboard.mp3" type="audio/mp3">
                     </audio> <br>
-                    <a href="bundesgartenschau.de">Bundesgartenschau</a> <br>
-                    <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter me-2"></i>Instagram</a><br>
-                    <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter me-2"></i>Facebook</a><br>
-                    <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter me-2"></i>Google+</a
->
-
+                    <a class= "btn-bundesgartenschau" href="bundesgartenschau.de">Bundesgartenschau</a> <br>
+                    <a class="btn btn-instagram" href="#!" role="button"><i class="fab fa-instagram"></i>Instagram</a><br>
+                    <a class="btn btn-facebook" href="#!" role="button"><i class="fab fa-facebook me-2"></i>Facebook</a><br>
+                    <a class="btn btn-google" href="#!" role="button"><i class="fab fa-Google me-2"></i>Google+</a>
+                    <div class="rating">
+                        <h2>Star Rating</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
                 </div>
                 <div class="main_area">
-                    <article id="article">
-                       <p id="article_content">
+                    <article class="article">
+                    <h6>Title</h6>
+                       <p class="article_content">
                         Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht? Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur,
                        </p> 
                     </article>
@@ -141,9 +151,8 @@
                           </div>
                         </div>
                     </div>
-                    <!-- Articles-->
-                    <!-- der folgende Artikel + <ul> wurde mit absicht auf Standardwerten gelassen, weil man diese dadurch besser lesen konnte.-->
-                    <article  id="article">
+                    <article  class="article">
+                        <h6>Title</h6>
                         <ul>
                             <li>17.05.2032 Infotag</li>
                             <li>18.05.2032 Präsentationen</li>
@@ -152,23 +161,29 @@
                             <li>22.11.2032 Schluss</li>
                         </ul>
                     </article>
-                    <article  id="article">
-                        <p id="article_content">
+                    <article  class="article">
+                        <h6>Title</h6>
+                        <p class="article_content">
                             Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht? Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur,
                            </p> 
                     </article>
-                    <article  id="article">
-                        <p id="article_content">
+                    <article  class="article">
+                        <h6>Title</h6>
+                        <p class="article_content">
                             Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht? Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur,
                            </p> 
                     </article>
-                    <article  id="article">
-                        <p id="article_content">
+                    <article  class="article">
+                        <h6>Title</h6>
+                        <p class="article_content">
                             Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht? Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur,
                            </p> 
                     </article>
                     
                 </div>
+            </div>
+            <div class="quellen">
+                <a id="q" href="https://raw.githubusercontent.com/mediaelement/mediaelement-files/master/big_buck_bunny.mp4">Freie Videodatei</a>
             </div>
 
         </main>
