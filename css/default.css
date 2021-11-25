@@ -32,13 +32,10 @@ footer {
 }
 .rose{
     /* ich weiß nicht warum, aber irgendwie haben das Bild und Video nicht die gleiche größe wenn ich beide auf 50% stelle. Deshalb 98% */
-    width: 98%;
+    width: 100%;
 }
 .vid { 
     width: 50%;
-}
-.sidebar {
-    float: right;
 }
 
 #article {
@@ -55,9 +52,11 @@ footer {
     width: 100;
     height: 300px;
 }
+.News_area{
+    display: flex;
+    flex-direction: row-reverse;
 
-/* WebFont schriftart mit Css einbinden*/ 
-ul {
-
-    
+}
+.main_area{
+    width: 80%;
 }
