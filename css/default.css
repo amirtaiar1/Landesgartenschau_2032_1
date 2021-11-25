@@ -40,3 +40,15 @@ footer {
 .sidebar {
     float: right;
 }
+
+#article {
+    background-color: rgb(0, 212, 18);
+    margin: 15px;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+#article_content{
+    padding: 10px;
+    color: black;
+}
