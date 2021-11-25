@@ -122,15 +122,65 @@ div.quellen {
     height:10px; 
     color: white;
 }
-/*Ich weiß selber nicht wieso der Header und das Logo, die Animation nicht übernehmen. 
-Falls ihr das Problem finden solltet, dann würde ich mich über einen Lösungsvorschlag sehr freuen*/
-.headleiste {
+.zoom {
+    transition: transform 1s;
+}
 
-    background: red;
-    animation: mymove 5s;
-  }
-  
-  @keyframes mymove {
-    from {background-color: red;}
-    to {background-color: blue;}
+.zoom:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+@keyframes colors {
+    0% {
+        background-color: rgb(187, 187, 187);;
+    }
+    25% {
+        background-color: rgb(150, 150, 150);
+    }
+    50% {
+        background-color: rgb(77, 170, 77);
+    }
+    75% {
+        background-color: rgb(22, 22, 88);
+    }
+    100% {
+        background-color: rgb(187, 187, 187);
+    }
+}
+header {
+    margin-bottom: 25px;
+    background-color: rgb(187, 187, 187);
+    animation-name: colors;
+    animation-duration: 10s;
+
+}
+@keyframes run {
+    0% {
+        left: 100%;
+        top: 100%;
+        -webkit-transform: rotateY(0deg);
+    }
+    50% {
+        left: 50%;
+        top: 50%;
+        -webkit-transform: rotateY(180deg);
+    }
+    75% {
+        left: 25%;
+        top: 25%;
+        -webkit-transform: rotateY(180deg);
+    }
+    100% {
+        left: 0;
+        top: 0%;
+        -webkit-transform: rotateY(0deg);
+    }
+}
+
+.animation_img_fly {
+    bottom: 100%;
+    position: relative;
+    animation: linear;
+    animation-name: run;
+    animation-duration: 3s;
 }
