@@ -47,8 +47,17 @@ footer {
     border-radius: 10px;
     border: 2px black solid;
 }
-
 #article_content{
     padding: 10px;
     color: black;
+}
+.card-img-top {
+    width: 100;
+    height: 300px;
+}
+
+/* WebFont schriftart mit Css einbinden*/ 
+ul {
+
+    
 }
