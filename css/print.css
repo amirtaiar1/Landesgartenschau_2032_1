@@ -2,6 +2,7 @@
 @media print {
     ul{
         list-style-image: none !important;
+        font-family: serif !important;
     }
     main {
     color: black !important;
@@ -16,5 +17,5 @@
     .rating{display:none;}
     .card-group{display:none;}
     .quellen {display:none;}
-    footer{display:none;}
+    footer {display:none;}
 }
