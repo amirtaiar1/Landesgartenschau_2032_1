@@ -1,3 +1,6 @@
+@import url(../css/print.css);
+
+
 /* Der Header bekommt hier einen Abstsand von 15 px zum Main */
 header {
     margin-bottom: 15px;

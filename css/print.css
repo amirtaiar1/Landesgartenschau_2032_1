@@ -1,14 +1,20 @@
+
 @media print {
-    main {
-    color: rgb (0,0,0);
-    background-color: #FFF;
+    ul{
+        list-style-image: none !important;
     }
-
-    .container_media {display: none;}
-    
-    .sidebar {display: none;}
-    footer {display: none;}
+    main {
+    color: black !important;
+    background-color: white !important;
+    }
     header {display: none;}
-    .rating {display: none;}
-
+    .container_media {display: none;}
+    .vid{display:none;}
+    .rose {display: none;}
+    .centered {display: none;}
+    .sidebar {display: none;}
+    .rating{display:none;}
+    .card-group{display:none;}
+    .quellen {display:none;}
+    footer{display:none;}
 }
