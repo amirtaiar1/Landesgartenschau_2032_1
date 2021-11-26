@@ -1,0 +1,14 @@
+@media print {
+    main {
+    color: rgb (0,0,0);
+    background-color: #FFF;
+    }
+
+    .container_media {display: none;}
+    
+    .sidebar {display: none;}
+    footer {display: none;}
+    header {display: none;}
+    .rating {display: none;}
+
+}
