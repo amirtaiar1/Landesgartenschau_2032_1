@@ -1,80 +1,107 @@
 @import url(../css/print.css);
 
-
 /* Der Header bekommt hier einen Abstsand von 15 px zum Main */
+
 header {
     margin-bottom: 15px;
 }
+
+
 /* Hiermit wird die Hintergrundfarbe geändert und auf grau gestellt*/
+
 body {
     background-color: rgb(187, 187, 187);
 }
+
+
 /* Die Logos der Firmen werden hiermit zentriert. Sieht übersichtlicher und schöner aus */
+
 .pic {
-    display: block; text-align: center;
+    display: block;
+    text-align: center;
 }
+
+
 /* Wie die logos, wird auch der Footer zentriert, außerdem wird ein Abstand von 50px zum Main gehalten.*/
+
 footer {
     text-align: center;
     margin-top: 50px;
 }
+
 .container_media {
     display: flex;
 }
+
 .container_img {
     position: relative;
 }
+
+
 /*Zitat auf dem Bild wird damit zentriert und etwas verändert*/
+
 .centered {
     position: absolute;
     top: 50%;
     width: 100%;
     text-align: center;
     font-size: 22px;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     font-weight: 750;
 }
-.rose{
+
+.rose {
     /* ich weiß nicht warum, aber irgendwie haben das Bild und Video nicht die gleiche größe wenn ich beide auf 50% stelle. Deshalb 98% */
     width: 100%;
 }
-.vid { 
+
+.vid {
     width: 50%;
 }
+
+
 /*eibindung der Schriftart*/
+
 @font-face {
     font-family: "OpenSansCondensed";
     src: url("../fonts/OpenSansCondensed-Bold.ttf");
 }
+
+
 /*Anpasung der Artikeln*/
+
 .article {
-    background-color: rgb(0, 212, 18);
+    background-color: rgb(145, 145, 145);
     margin: 15px;
     border-radius: 10px;
-    border: 2px black solid;    
-    font-family:"OpenSansCondensed";
-
+    border: 2px black solid;
+    font-family: "OpenSansCondensed";
 }
 
-.article_content{
+.article_content {
     padding: 10px;
     color: black;
 }
 
-/*Anpassung der Bilder der Karten*/
-.card-img-top {
 
-    height: 300px;
+/*Anpassung der Bilder der Karten*/
+
+.card-img-top {
+    height: 200px;
 }
 
-.News_area{
+.News_area {
     display: flex;
     flex-direction: row-reverse;
 }
-.main_area{
+
+.main_area {
     width: 80%;
 }
+
+
 /*Buttons*/
+
 .btn-bundesgartenschau {
     background-color: rgb(0, 221, 29);
     margin: 10px;
@@ -83,48 +110,62 @@ footer {
     padding: 5px;
     text-align: center;
 }
+
 .btn-instagram {
     background-color: rgb(223, 20, 121);
     margin: 10px;
     color: white;
     text-align: center;
 }
+
 .btn-facebook {
     background-color: blue;
     margin: 10px;
     color: white;
     text-align: center;
 }
+
 .btn-google {
     background-color: rgb(131, 0, 0);
     margin: 10px;
     color: white;
     text-align: center;
 }
+
 .audio_keyboard {
     margin: 10px;
 }
+
+
 /*"Aufzählungsbild*/
+
 ul {
-    list-style-image:url("../image/icon.png")
+    list-style-image: url("../image/icon.png")
 }
+
+
 /*Rating*/
-.checked{
+
+.checked {
     color: orange;
-  }
+}
 
 .rating {
     margin-left: 10px;
 }
+
+
 /*Schrift über Video*/
+
 div.quellen {
-    position:absolute; 
-    top:160px; 
-    left:310px; 
-    width: 120px; 
-    height:10px; 
+    position: absolute;
+    top: 160px;
+    left: 310px;
+    width: 120px;
+    height: 10px;
     color: white;
 }
+
 .zoom {
     transition: transform 1.5s;
 }
@@ -132,30 +173,33 @@ div.quellen {
 .zoom:hover {
     transform: scale(1.1);
 }
+
 @keyframes colors {
     0% {
-        background-color: rgb(187, 187, 187);;
+        background-color: rgb(187, 187, 187);
+        ;
     }
     25% {
-        background-color: rgb(150, 150, 150);
+        background-color: rgb(100, 100, 100);
     }
     50% {
-        background-color: rgb(77, 170, 77);
+        background-color: rgb(50, 50, 50);
     }
     75% {
-        background-color: rgb(22, 22, 88);
+        background-color: rgb(150, 150, 150);
     }
     100% {
         background-color: rgb(187, 187, 187);
     }
 }
+
 header {
     margin-bottom: 25px;
     background-color: rgb(187, 187, 187);
     animation-name: colors;
     animation-duration: 10s;
-
 }
+
 @keyframes run {
     0% {
         left: 100%;
@@ -185,4 +229,8 @@ header {
     animation: linear;
     animation-name: run;
     animation-duration: 3s;
+}
+
+h6 {
+    padding: 10px;
 }
