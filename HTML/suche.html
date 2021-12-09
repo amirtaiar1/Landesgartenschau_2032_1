@@ -67,7 +67,71 @@
             </nav>
         </header>
         <main>
-            <!-- Hauptteil-->
+            <h2>Suchmaschine</h2>
+            <hr>
+            <article>
+                <form action="https://google.de/search" target="_blank">
+                    <h5>Googlesuche: Hier können Sie über Googlesuche Wikipedia-Seiten suchen.</h5>
+                    <label for="search"></label>Suche:
+                    <input type="text" id="search" name="q" size="30" placeholder="Suchbegriff">
+                    <input type="hidden" name="sitesearch" value="de.wikipedia.org" class="from-control">
+                    <input type="submit" value="Suchen">
+                </form>
+            </article>
+            <hr>
+            <article id="pflanzenbestimmung">
+                <form action="https://pflanzenbestimmung.info/" method="get" target="ergebnisAnzeige">
+                    <h3>Pflanzenbestimmung:</h3>
+                    <label>Suchbegriff:</label>
+                    <input type="text" name="s" size="20" placeholder="Suchbegriff" />
+                    <input type="submit" value="Suchen" />
+                </form>
+            </article>
+            <hr>
+            <article id="wetter">
+                <form action="https://api.wetteronline.de/wetterwidget" target="ergebnisAnzeige">
+                    <h3>Wetter</h3>
+                    <label>Suchbegriff:</label>
+
+                    <label for="lang">Sprache</label>
+                    <select name=lang id="lang">
+                    <option value="de">Deutschland</option>
+                    <option value="it">Italien</option>
+                    </select>
+                    <select name="gid" id="ort">
+                    <option value="10740">Offenburg</option>
+                    <option value="10382">Berlin</option>
+                    <option value="10734">Heidelberg</option>
+                    <option value="10727">Karlsruhe</option>
+
+                    </select>
+                    <label for="mode">Format</label>
+                    <select name="modeid" id="mode">
+                    <option value="CW1">300 x 100 (Aktuell)</option>
+                    <option value="FC1">300 x 255 (Heute)</option>
+                    <option value="FC2">300 x 310 (2 Tage)</option>
+                    <option value="FC3">300 x 365 (3 Tage)</option>
+
+                </select>
+                    <input type="submit" value="Suchen">
+                </form>
+            </article>
+            <hr>
+            <article class="DB">
+                <form action="https://reiseauskunft.bahn.de/bin/query.exe/" method="get" target="ergebnisAnzeige">
+                    <h5>Deutsche Bahn-Suche:</h5>
+                    <label>Startbahnhof </label>
+                    <input type="text" name="ld" size="20" placeholder="Startbahnhof" />
+                    <input type="text" name="seqnr" size="20" placeholder="Zielbahnhof" />
+                    <input type="time" name="time" size="20" placeholder="Uhrzeit" />
+                    <input type="text" name="date" size="20" placeholder="Datum DD.MM.JJJJ" />
+                    <input type="radio" id="ab" name="option" size="20" placeholder="Ab" /><label for="ab">Ab</label>
+                    <input type="radio" id="an" name="option" size="20" placeholder="An" /><label for="an">An</label>
+                    <input type="submit" value="Suchen" />
+                </form>
+            </article>
+
+            <iframe id="my_iframe" name="ergebnisAnzeige" width="1100" height="500"></iframe>
         </main>
         <footer class="footer">
             <nav id="nav_3">

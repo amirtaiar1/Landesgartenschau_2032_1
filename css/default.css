@@ -239,3 +239,7 @@ header {
 h6 {
     padding: 10px;
 }
+
+.form-group {
+    margin: 5px;
+}
