@@ -157,12 +157,152 @@
                         </div>
                     </div>
             </div>
+            <!-- Bezahloptionen -->
+            <div class="card">
+
+                <div class="card-header">
+                    <h2>Bezahloptionen</h2>
+                </div>
+                <div class="card-body">
+
+                    <!-- Bezahloptionen mit Awesome icons  -->
 
 
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bezahloption" id="visa" value="option1" required>
+
+                                <label class="form-check-label" for="visa"><i class="fab fa-cc-visa"></i>
+                                    Visa</label>
+                                <span class="form-check-icon"><i class="las la-credit-card"></i> </span>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bezahloption" id="mastercard" value="option2" required>
+                                <label class="form-check-label" for="mastercard"><i
+                                        class="fab fa-cc-mastercard"></i> Mastercard</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bezahloption" id="rechnung" value="option3" required>
+                                <label class="form-check-label" for="rechnung"><i
+                                        class="fas fa-file-invoice"></i> Rechnung</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="form-group row">
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rechnung</h5>
+
+                                    <fieldset>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rechnung" id="rechnungsadresseGleichLieferadresse" value="option1" required>
+                                            <label class="form-check-label" for="rechnungsadresseGleichLieferadresse">Rechnungsadresse
+                                                gleich Lieferadresse</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rechnung" id="abweichenderRechnungsempfänger" value="option1" required>
+                                            <label class="form-check-label" for="abweichenderRechnungsempfänger">Abweichender
+                                                Rechnungsempfänger</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="card-body">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="row-sm-2 col-form-label">Straße,
+                                                Hausnummer*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" id="inputStraße" maxlength="40" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPLZ" class="row-sm-2 col-form-label">PLZ*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" pattern="[0-9]{5}" class="form-control" id="inputPLZ" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputOrt" class="row-sm-2 col-form-label">Ort*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" list="orte" class="form-control" id="inputOrt" maxlength="40" required>
+                                                <datalist id="orte">
+                                                    <option value="Offenburg">
+                                                    <option value="Freiburg">
+                                                    <option value="Weil am Rhein">
+                                                    <option value="Lörrach">
+                                                    <option value="Basel">
+                                                    <option value="Paris">
+                                                </datalist>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kartenzahlung</h5>
+
+                                    <fieldset disabled>
+                                        <div class="form-group">
+                                            <label for="inputName" class="row-sm-2 col-form-label">Name des
+                                                Karteninhabers*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" id="inputName" maxlength="100" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputKartennummer" class="row-sm-2 col-form-label">Kartennummer*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" id="inputKartennummer" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPrüfziffer" class="row-sm-2 col-form-label">Prüfziffer*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" id="inputPruefziffer" pattern="[0-9]{3}" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label class="row-sm-2 col-form-label">Monat* </label>
+                                                <input type="number" class="form-control" id="inputMonat" min="01" max="12" step="01" required>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputJahr" class="row-sm-2 col-form-label">Jahr*
+                                                </label>
+                                                <input type="number" class="form-control" id="inputJahr" min="2020" max="2040" step="1" required>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="loginbutton" type="submit" name="Submit" id="registration" value="absenden">Absenden</button>
+                            <button class="loginbutton" type="reset" value="reset"> Reset </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
             <!-- Reset und Absende button                    
+                <div class="form-group">
                 <button class="loginbutton" type="submit" name="Submit" id="registration" value="absenden">Absenden</button>
                 <button class="loginbutton" type="reset" value="reset"> Reset </button>
+                </div>
             -->
 
         </main>
