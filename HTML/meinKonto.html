@@ -68,88 +68,87 @@
             </nav>
         </header>
         <main>
-            <main>
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Login</h2>
-                    </div>
-                    <form action="http://141.79.64.139/cstippek/FormCheck.php">
-                        <div class="card-body">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="inputKundennummer">Kundennummer</label>
-                                    <input type="text" class="form-control" id="inputKundennummer" placeholder="Kundennummer">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="inputPasswort">Passwort</label>
-                                    <input type="password" class="form-control" id="inputPasswort" placeholder="Passwort" autocomplete="off">
-                                </div>
-                            </div>
-                            <button class="loginbutton" type="submit" value="Login"> Login</button>
-                        </div>
-                    </form>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Login</h2>
                 </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Registration</h2>
+                <form action="http://141.79.64.139/cstippek/FormCheck.php">
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputKundennummer">Kundennummer</label>
+                                <input type="text" class="form-control" id="inputKundennummer" placeholder="Kundennummer">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPasswort">Passwort</label>
+                                <input type="password" class="form-control" id="inputPasswort" placeholder="Passwort" autocomplete="off">
+                            </div>
+                        </div>
+                        <button class="loginbutton" type="submit" value="Login"> Login</button>
                     </div>
-                    <form action="http://141.79.64.139/cstippek/FormCheck.php" method="post" name="Formular" id="Formular">
-                        <div class="card-body">
-                            <div class="form-group row">
-                                <label for="inputAnrede" class="col-sm-2 col-form-label">Anrede*</label>
+                </form>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Registrieren</h2>
+                </div>
+                <form action="http://141.79.64.139/cstippek/FormCheck.php" method="post" name="Formular" id="Formular">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="inputAnrede" class="col-sm-2 col-form-label">Anrede*</label>
 
-                                <div class="col-sm-10">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="anrede" id="frau" value="option1" checked>
-                                        <label class="form-check-label" for="frau">Frau</label>
-                                    </div>
+                            <div class="col-sm-10">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="anrede" id="frau" value="option1" checked>
+                                    <label class="form-check-label" for="frau">Frau</label>
+                                </div>
 
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="anrede" id="herr" value="option2">
-                                        <label class="form-check-label" for="herr">Herr</label>
-                                    </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="anrede" id="herr" value="option2">
+                                    <label class="form-check-label" for="herr">Herr</label>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="inputAnrede" class="col-sm-2 col-form-label">Titel*</label>
-                                <div class="col-sm-10">
-                                    <input type="text" list="aktitle" class="form-control" id="inputAnrede" maxlength="10" required>
-                                    <datalist id="aktitle">
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputAnrede" class="col-sm-2 col-form-label">Titel*</label>
+                            <div class="col-sm-10">
+                                <input type="text" list="aktitle" class="form-control" id="inputAnrede" maxlength="10" autocomplete="on" Tabindex="1" required>
+                                <datalist id="aktitle">
                                         <option value="Prof.">
                                         <option value="Dr.">
                                         <option value="Dipl.">
                                     </datalist>
-                                </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="inputVorname" class="col-sm-2 col-form-label">Vorname*</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputVorname" maxlength="20" required>
-                                </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputVorname" class="col-sm-2 col-form-label">Vorname*</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputVorname" maxlength="20" autocomplete="on" Tabindex="2" required>
                             </div>
-                            <div class="form-group row">
-                                <label for="inputNachname" class="col-sm-2 col-form-label">Nachname*</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputNachname" maxlength="40" required>
-                                </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputNachname" class="col-sm-2 col-form-label">Nachname*</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputNachname" maxlength="40" autocomplete="on" Tabindex="3" required>
                             </div>
-                            <div class="form-group row">
-                                <label for="inputStraße" class="col-sm-2 col-form-label">Straße, Hausnummer*</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputStraße" maxlength="40" required>
-                                </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputStraße" class="col-sm-2 col-form-label">Straße, Hausnummer*</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputStraße" maxlength="40" autocomplete="on" Tabindex="4" required>
                             </div>
-                            <div class="form-group row">
-                                <label for="inputPLZ" class="col-sm-2 col-form-label">PLZ*</label>
-                                <div class="col-sm-10">
-                                    <input type="text" pattern="[0-9]{5}" class="form-control" id="inputPLZ" required>
-                                </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPLZ" class="col-sm-2 col-form-label">PLZ*</label>
+                            <div class="col-sm-10">
+                                <input type="text" pattern="[0-9]{5}" class="form-control" id="inputPLZ" autocomplete="on" Tabindex="5" required>
                             </div>
-                            <div class="form-group row">
-                                <label for="inputOrt" class="col-sm-2 col-form-label">Ort*</label>
-                                <div class="col-sm-10">
-                                    <input type="text" list="orte" class="form-control" id="inputOrt" maxlength="40" required>
-                                    <datalist id="orte">
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputOrt" class="col-sm-2 col-form-label">Ort*</label>
+                            <div class="col-sm-10">
+                                <input type="text" list="orte" class="form-control" id="inputOrt" maxlength="40" autocomplete="on" Tabindex="6" required>
+                                <datalist id="orte">
                                         <option value="Offenburg">
                                         <option value="Karlsruhe">
                                         <option value="Ulm">
@@ -159,12 +158,12 @@
                                         <option value="München">
                                         <option value="Hamburg">   
                                     </datalist>
-                                </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="inputOrt" class="col-sm-2 col-form-label">Land*</label>
-                                <div class="col-sm-10">
-                                    <select name="Land" class="form-control" id="inputLand" required>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputOrt" class="col-sm-2 col-form-label">Land*</label>
+                            <div class="col-sm-10">
+                                <select name="Land" class="form-control" id="inputLand" Tabindex="7" required>
                                         <option value="" selected>Deutschland</option>
                                         <option>Frankreich</option>
                                         <option>Niederlande</option>
@@ -175,62 +174,61 @@
                                         <option>Türkei</option>
                                         <option>Russland</option>
                                     </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputEmail" class="col-sm-2 col-form-label">Email*</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail" autocomplete="on" tabindex="8" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputTel" class="col-sm-2 col-form-label">Telefonnummer</label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="inputTel" Tabindex="9" autocomplete="on">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputGeburtsdatum" class="col-sm-2 col-form-label">Geburtsdatum*</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="inputGeburtsdatum" autocomplete="on" Tabindex="10" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPasswort" class="col-sm-2 col-form-label">Passwort*</label>
+                            <div class="col-sm-10">
+                                <div class="input-group sm-10">
+                                    <input class="form-control" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$" type="password" id="password" name="password" maxlength="20" Tabindex="11" required placeholder="Wir werden ihr Passwort mit niemanden teilen!" />
+                                    <button class="btn-primary input-group-append"><i class="bi bi-eye-slash"></i></button>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="inputEmail" class="col-sm-2 col-form-label">Email*</label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputEmail" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputTel" class="col-sm-2 col-form-label">Telefonnummer</label>
-                                <div class="col-sm-10">
-                                    <input type="tel" class="form-control" id="inputTel">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputGeburtsdatum" class="col-sm-2 col-form-label">Geburtsdatum*</label>
-                                <div class="col-sm-10">
-                                    <input type="date" class="form-control" id="inputGeburtsdatum" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputPasswort" class="col-sm-2 col-form-label">Passwort*</label>
-                                <div class="col-sm-10">
-                                    <div class="input-group sm-10">
-                                        <input class="form-control" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$" type="password" id="password" name="password" maxlength="20" required placeholder="Wir werden ihr Passwort mit niemanden teilen!" />
-                                        <button class="btn-primary input-group-append"><i class="bi bi-eye-slash"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="repeatPassword" class="col-sm-2 col-form-label">Passwort wiederholen*</label>
+                        </div>
+                        <div class="form-group row">
+                            <label for="repeatPassword" class="col-sm-2 col-form-label">Passwort wiederholen*</label>
 
-                                <div class="col-sm-10">
-                                    <input class="form-control" type="password" name="repeatPassword" id="repeatPassword" required placeholder="Passwort wiederholen" />
+                            <div class="col-sm-10">
+                                <input class="form-control" type="password" name="repeatPassword" id="repeatPassword" Tabindex="12" required placeholder="Passwort wiederholen" />
 
-                                </div>
                             </div>
-                            <div class="form-group row">
-                                <div class="col-sm-10">
-                                    <div class="form-check form-check-inline">
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <div class="form-check form-check-inline">
 
-                                        <input class="form-check-input" type="checkbox" onchange="agbSubmitChange()" name="agb" id="agb" value="option1">
-                                        <label class="form-check-label" for="agb">
+                                    <input class="form-check-input" type="checkbox" onchange="agbSubmitChange()" name="agb" id="agb" Tabindex="13" value="option1">
+                                    <label class="form-check-label" for="agb">
                                             Ja, ich stimme den <a href="#">AGBs </a> und <a
                                                 href="datenschutz.html">Datenschutzrichtlinien</a> zu.* </label>
-                                    </div>
                                 </div>
                             </div>
-
-                            <button class="loginbutton" type="submit" name="Submit" id="registration" value="absenden">
-                                Absenden</button>
-                            <button class="loginbutton" type="reset" value="reset"> Reset </button>
                         </div>
-                    </form>
-                </div>
-            </main>
+
+                        <button class="loginbutton" type="submit" name="Submit" id="registration" value="absenden">
+                                Absenden</button>
+                        <button class="loginbutton" type="reset" value="reset"> Reset </button>
+                    </div>
+                </form>
+            </div>
         </main>
         <footer class="footer">
             <nav id="nav_3">

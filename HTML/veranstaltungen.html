@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/default.css">
+    <script src="../js/registrierung.js"></script>
 
 
 </head>
@@ -77,7 +78,7 @@
                         <div class="form-group row">
                             <label for="inputVeranstaltung" class="col-sm-2 col-form-label">Veranstaltung</label>
                             <div class="col-sm-10">
-                                <select name="Veransaltung" class="form-control" id="inputveranstaltung" required>
+                                <select name="Veransaltung" class="form-control" id="inputVeranstaltung" required>
                                     <option value="" selected>Hauptveranstaltung</option>
                                     <option>Veranstaltung1</option>
                                     <option>Veranstaltung2</option>
@@ -115,32 +116,32 @@
                             <div class="form-group row">
                                 <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Zeitraum von:</label>
                                 <div class="col-sm-10">
-                                    <input type="datetime-local" class="form-control" id="dateeingabe" name="date" size=20 placeholder="Datum" required/>
+                                    <input type="datetime-local" class="form-control" id="dateeingabe" name="date" size=20 required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Zeitraum bis:</label>
                                 <div class="col-sm-10">
-                                    <input type="datetime-local" class="form-control" id="dateeingabe" name="date" size=20 placeholder="Datum" required/>
+                                    <input type="datetime-local" class="form-control" id="dateineingabebis" name="date" size=20 required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Spende</label>
                                 <div class="col-sm-10">
-                                    <input type="number" class="form-control" id="spende" name="spende" size=20 placeholder="Beitrag der Spende in Euro" required/>
+                                    <input type="number" class="form-control" id="spende" name="spende" placeholder="Beitrag der Spende in Euro" required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Sitzplatzauswahl</label>
                                 <div class="col-sm-10">
-                                    <img src="../image/großer-saal.jpg" usemap="#image-map">
+                                    <img src="../image/großer-saal.jpg" alt="großer-saal" usemap="#image-map">
                                     <map name="image-map">
-                                        <area target="" alt="Sitzplatz 55" title="Sitzplatz 55" href="#" coords="161,234,145,218" shape="rect">
-                                        <area target="" alt="Sitzplatz 56" title="Sitzplatz 56" href="#" coords="122,218,135,234" shape="rect">
-                                        <area target="" alt="Sitzplatz 57" title="Sitzplatz 57" href="#" coords="98,219,114,233" shape="rect">
-                                        <area target="" alt="Sitzplatz 58" title="Sitzplatz 58" href="#" coords="74,216,90,235" shape="rect">
-                                        <area target="" alt="Sitzplatz 59" title="Sitzplatz 59" href="#" coords="51,217,64,235" shape="rect">
-                                        <area target="" alt="Sitzplatz 60" title="Sitzplatz 60" href="#" coords="26,217,43,232" shape="rect">
+                                        <area target="self" alt="Sitzplatz 55" title="Sitzplatz 55" href="#" coords="161,234,145,218" shape="rect">
+                                        <area target="self" alt="Sitzplatz 56" title="Sitzplatz 56" href="#" coords="122,218,135,234" shape="rect">
+                                        <area target="self" alt="Sitzplatz 57" title="Sitzplatz 57" href="#" coords="98,219,114,233" shape="rect">
+                                        <area target="self" alt="Sitzplatz 58" title="Sitzplatz 58" href="#" coords="74,216,90,235" shape="rect">
+                                        <area target="self" alt="Sitzplatz 59" title="Sitzplatz 59" href="#" coords="51,217,64,235" shape="rect">
+                                        <area target="self" alt="Sitzplatz 60" title="Sitzplatz 60" href="#" coords="26,217,43,232" shape="rect">
                                 </map>
                                 </div>
                             </div>
@@ -152,83 +153,85 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Bezahloptionen -->
-                    <div class="card">
+                </form>
+            </div>
+            <!-- Bezahloptionen -->
+            <div class="card">
 
-                        <div class="card-header">
-                            <h2>Bezahloptionen</h2>
-                        </div>
-                        <div class="card-body">
+                <div class="card-header">
+                    <h2>Bezahloptionen</h2>
+                </div>
+                <div class="card-body">
 
-                            <!-- Bezahloptionen mit Awesome icons  -->
+                    <!-- Bezahloptionen mit Awesome icons  -->
 
 
-                            <div class="form-group row">
-                                <div class="col-sm-10">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="bezahloption" id="visa" value="option1" required>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bezahloption" id="visa" value="option1" required>
 
-                                        <label class="form-check-label" for="visa"><i class="fab fa-cc-visa"></i>
+                                <label class="form-check-label" for="visa"><i class="fab fa-cc-visa"></i>
                                     Visa</label>
-                                        <span class="form-check-icon"><i class="las la-credit-card"></i> </span>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="bezahloption" id="mastercard" value="option2" required>
-                                        <label class="form-check-label" for="mastercard"><i
-                                        class="fab fa-cc-mastercard"></i> Mastercard</label>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="bezahloption" id="rechnung" value="option3" required>
-                                        <label class="form-check-label" for="rechnung"><i
-                                        class="fas fa-file-invoice"></i> Rechnung</label>
-                                    </div>
-                                </div>
+                                <span class="form-check-icon"><i class="las la-credit-card"></i> </span>
                             </div>
 
-                            <br />
-                            <div class="form-group row">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bezahloption" id="mastercard" value="option2" required>
+                                <label class="form-check-label" for="mastercard"><i
+                                        class="fab fa-cc-mastercard"></i> Mastercard</label>
+                            </div>
 
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Rechnung</h5>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bezahloption" id="rechnung" value="option3" required>
+                                <label class="form-check-label" for="rechnung"><i
+                                        class="fas fa-file-invoice"></i> Rechnung</label>
+                            </div>
+                        </div>
+                    </div>
 
-                                            <fieldset>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="rechnung" id="rechnungsadresseGleichLieferadresse" value="option1" required>
-                                                    <label class="form-check-label" for="rechnungsadresseGleichLieferadresse">Rechnungsadresse
+                    <br />
+                    <div class="form-group row">
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rechnung</h5>
+
+                                    <fieldset>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rechnung" id="rechnungsadresseGleichLieferadresse" value="option1" required>
+                                            <label class="form-check-label" for="rechnungsadresseGleichLieferadresse">Rechnungsadresse
                                                 gleich Lieferadresse</label>
-                                                </div>
-
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="rechnung" id="abweichenderRechnungsempfänger" value="option1" required>
-                                                    <label class="form-check-label" for="abweichenderRechnungsempfänger">Abweichender
-                                                Rechnungsempfänger</label>
-                                                </div>
-                                            </fieldset>
                                         </div>
-                                        <div class="card-body">
-                                            <fieldset>
-                                                <div class="form-group">
-                                                    <label class="row-sm-2 col-form-label">Straße,
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rechnung" id="abweichenderRechnungsempfänger" value="option1" required>
+                                            <label class="form-check-label" for="abweichenderRechnungsempfänger">Abweichender
+                                                Rechnungsempfänger</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="card-body">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="row-sm-2 col-form-label">Straße,
                                                 Hausnummer*</label>
-                                                    <div class="col-sm-12">
-                                                        <input type="text" class="form-control" id="inputStraße" maxlength="40" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="inputPLZ" class="row-sm-2 col-form-label">PLZ*</label>
-                                                    <div class="col-sm-12">
-                                                        <input type="text" pattern="[0-9]{5}" class="form-control" id="inputPLZ" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="inputOrt" class="row-sm-2 col-form-label">Ort*</label>
-                                                    <div class="col-sm-12">
-                                                        <input type="text" list="orte" class="form-control" id="inputOrt" maxlength="40" required>
-                                                        <datalist id="orte">
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" id="inputStraße" maxlength="40" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPLZ" class="row-sm-2 col-form-label">PLZ*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" pattern="[0-9]{5}" class="form-control" id="inputPLZ" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputOrt" class="row-sm-2 col-form-label">Ort*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" list="orte" class="form-control" id="inputOrt" maxlength="40" required>
+                                                <datalist id="orte">
                                                     <option value="Offenburg">
                                                     <option value="Freiburg">
                                                     <option value="Weil am Rhein">
@@ -236,64 +239,64 @@
                                                     <option value="Basel">
                                                     <option value="Paris">
                                                 </datalist>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
+                                    </fieldset>
 
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Kartenzahlung</h5>
-
-                                            <fieldset disabled>
-                                                <div class="form-group">
-                                                    <label for="inputName" class="row-sm-2 col-form-label">Name des
-                                                Karteninhabers*</label>
-                                                    <div class="col-sm-12">
-                                                        <input type="text" class="form-control" id="inputName" maxlength="100" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="inputKartennummer" class="row-sm-2 col-form-label">Kartennummer*</label>
-                                                    <div class="col-sm-12">
-                                                        <input type="text" class="form-control" id="inputKartennummer" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="inputPrüfziffer" class="row-sm-2 col-form-label">Prüfziffer*</label>
-                                                    <div class="col-sm-12">
-                                                        <input type="text" class="form-control" id="inputPruefziffer" pattern="[0-9]{3}" required>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-group col-md-6">
-                                                        <label class="row-sm-2 col-form-label">Monat* </label>
-                                                        <input type="number" class="form-control" id="inputMonat" min="01" max="12" step="01" required>
-                                                    </div>
-                                                    <div class="form-group col-md-6">
-                                                        <label for="inputJahr" class="row-sm-2 col-form-label">Jahr*
-                                                </label>
-                                                        <input type="number" class="form-control" id="inputJahr" min="2020" max="2040" step="1" required>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <button class="loginbutton" type="submit" name="Submit" id="registration" value="absenden">Absenden</button>
-                                    <button class="loginbutton" type="reset" value="reset"> Reset </button>
-                                </div>
-
                             </div>
                         </div>
-                    </div>
+                        <div class="col-sm-6">
 
-                    <!-- Reset und Absende button                    
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kartenzahlung</h5>
+
+                                    <fieldset disabled>
+                                        <div class="form-group">
+                                            <label for="inputName" class="row-sm-2 col-form-label">Name des
+                                                Karteninhabers*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" id="inputName" maxlength="100" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputKartennummer" class="row-sm-2 col-form-label">Kartennummer*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" id="inputKartennummer" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPrüfziffer" class="row-sm-2 col-form-label">Prüfziffer*</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" id="inputPruefziffer" pattern="[0-9]{3}" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label class="row-sm-2 col-form-label">Monat* </label>
+                                                <input type="number" class="form-control" id="inputMonat" min="01" max="12" step="01" required>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputJahr" class="row-sm-2 col-form-label">Jahr*
+                                                </label>
+                                                <input type="number" class="form-control" id="inputJahr" min="2020" max="2040" step="1" required>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="loginbutton" type="submit" name="Submit" id="registration" value="absenden">Absenden</button>
+                            <button class="loginbutton" type="reset" value="reset"> Reset </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reset und Absende button                    
                 <div class="form-group">
                 <button class="loginbutton" type="submit" name="Submit" id="registration" value="absenden">Absenden</button>
                 <button class="loginbutton" type="reset" value="reset"> Reset </button>
@@ -310,11 +313,11 @@
                 <br><br><br>
             </nav>
         </footer>
-        </div>
+    </div>
 
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 
 </html>
