@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Amir Taiari"> 
+    <meta name="author" content="Amir Taiari">
     <meta name="date" content="2020-10-31T08:49:37+02:00">
     <meta name="keywords" content="Ihre Suchbegriffe">
     <meta name="description" content="Die Landesgartenschau in Offenburg findet dieses Jahr trotz Corona statt. Mithilfe dieser Veranstaltung sind Sie sogar in der Lage neue Verbindungen zu verknüpfen.">
@@ -20,8 +20,7 @@
     <meta name="msapplication-TileImage" content="../img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/default.css">
 
@@ -34,8 +33,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="index.html"><img src="../image/Logo.png" alt="Logo"></a>
                 <!--in diesem HTML-Element soll das Logo als Bild-Element integriert werden-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -43,18 +41,15 @@
                     <ul id="nav_1" class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home </a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#"
-                            id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Vision</a>
-                            <ul class="dropdown-menu dropdown-menu-dark"
-                            aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="vision.html#allgemeines">Allgemeines</a></li>
-                            <li><a class="dropdown-item" href="vision.html#unterstuetzer">Unterstützer</a></li>
-                            <li><a class="dropdown-item" href="vision.html#mehrwert">Vorteile</a></li>
-                            <li><a class="dropdown-item" href="vision.html#partner">Partner</a></li>
-                            <li><a class="dropdown-item" href="vision.html#presse">Presse</a></li>
-                            <li><a class="dropdown-item" href="lageplan.html">Lageplan</a></li>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="vision.html#allgemeines">Allgemeines</a></li>
+                                <li><a class="dropdown-item" href="vision.html#unterstuetzer">Unterstützer</a></li>
+                                <li><a class="dropdown-item" href="vision.html#mehrwert">Vorteile</a></li>
+                                <li><a class="dropdown-item" href="vision.html#partner">Partner</a></li>
+                                <li><a class="dropdown-item" href="vision.html#presse">Presse</a></li>
+                                <li><a class="dropdown-item" href="lageplan.html">Lageplan</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="aktuelles.html">Aktuelles</a></li>
@@ -63,7 +58,7 @@
                         <li class="nav-item"><a class="nav-link" href="allerlei.html">Allerlei</a></li>
                     </ul>
                     <ul id="nav_2" class="navbar-nav ms-auto">
-                        
+
                         <li class="nav-item"><a class="nav-link" href="suche.html"><i class="bi bi-search"></i> Suche</a> </li>
                         <li class="nav-item"><a class="nav-link" href="meinKonto.html"><i class="bi bi-person-circle"></i> mein Konto</a></li>
                         <li class="nav-item"><a class="nav-link" href="Kontakt.html"><i class="bi bi-envelope"></i> Kontakt</a></li>
@@ -73,11 +68,107 @@
         </header>
         <main>
             <!-- Hauptteil-->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Registration</h2>
+                </div>
+                <form action="http://141.79.64.139/cstippek/FormCheck.php" method="post" name="Formular" id="Formular">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="inputVeranstaltung" class="col-sm-2 col-form-label">Veranstaltung</label>
+                            <div class="col-sm-10">
+                                <select name="Veransaltung" class="form-control" id="inputveranstaltung" required>
+                                    <option value="" selected>Hauptveranstaltung</option>
+                                    <option>Veranstaltung1</option>
+                                    <option>Veranstaltung2</option>
+                                    <option>Veranstaltung3</option>
+                                    <option>Veranstaltung4</option>
+                                    <option>Veranstaltung5</option>
+                                </select>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <p>Preiskategorie: </p>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="preiskategorie" id="Kleinkind" value="option1" required>
+                                        <label class="form-check-label" for="kleinkind"><i class="fab fa-cc-kleinkind"></i>Kleinkind</label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="preiskategorie" id="Schueler" value="option2" required>
+                                        <label class="form-check-label" for="schueler"><i
+                                        class="fab fa-cc-Schueler"></i> Schüler</label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="preiskategorie" id="student" value="option3" required>
+                                        <label class="form-check-label" for="student"><i
+                                        class="fas fa-file-invoice"></i> Student</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="preiskategorie" id="erwachsener" value="option4" required>
+                                        <label class="form-check-label" for="erwachsener"><i
+                                        class="fas fa-file-invoice"></i>Erwachsener</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="preiskategorie" id="Rentner" value="option4" required>
+                                        <label class="form-check-label" for="rentner"><i class="fab fa-cc-rentner"></i>Rentner</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Zeitraum von:</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" id="dateeingabe" name="date" size=20 placeholder="Datum" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Zeitraum bis:</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" id="dateeingabe" name="date" size=20 placeholder="Datum" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Spende</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="spende" name="spende" size=20 placeholder="Beitrag der Spende in Euro" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Sitzplatzauswahl</label>
+                            <div class="col-sm-10">
+                                <img src="../image/großer-saal.jpg" usemap="#image-map">
+                                <map name="image-map">
+                                        <area target="" alt="Sitzplatz 55" title="Sitzplatz 55" href="#" coords="161,234,145,218" shape="rect">
+                                        <area target="" alt="Sitzplatz 56" title="Sitzplatz 56" href="#" coords="122,218,135,234" shape="rect">
+                                        <area target="" alt="Sitzplatz 57" title="Sitzplatz 57" href="#" coords="98,219,114,233" shape="rect">
+                                        <area target="" alt="Sitzplatz 58" title="Sitzplatz 58" href="#" coords="74,216,90,235" shape="rect">
+                                        <area target="" alt="Sitzplatz 59" title="Sitzplatz 59" href="#" coords="51,217,64,235" shape="rect">
+                                        <area target="" alt="Sitzplatz 60" title="Sitzplatz 60" href="#" coords="26,217,43,232" shape="rect">
+                                </map>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Sitzplatzauswahl</label>
+                            <div class="col-sm-10">
+                                <input readonly/>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+
+            <!-- Reset und Absende button                    
+                <button class="loginbutton" type="submit" name="Submit" id="registration" value="absenden">Absenden</button>
+                <button class="loginbutton" type="reset" value="reset"> Reset </button>
+            -->
+
         </main>
         <footer class="footer">
-            <nav id="nav_3">            
-                <br>
-                &#169; 2021 |
+            <nav id="nav_3">
+                <br> &#169; 2021 |
                 <a href="impressum.html"> Impressum</a> |
                 <a href="datenschutz.html">Datenschutz</a> |
                 <a href="erklaerungBF.html">  Erklärung zur Barrierefreiheit</a>
@@ -87,12 +178,8 @@
     </div>
 
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 
 </html>
