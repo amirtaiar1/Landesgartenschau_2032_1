@@ -1,18 +1,18 @@
-function agbSubmitChange() {
-    let agbCheckBox = document.querySelector("#agb");
-    let regButton = document.querySelector("#submitRegistrieren");
-    if (agbCheckBox.checked == true) {
-        regButton.disabled = false;
-    } else {
-        regButton.disabled = true;
+function absendenDisable(){
+    let elm = document.querySelector("#registrieren");
+    if(document.querySelector("#agb").checked == true) {
+        elm.disabled = false;
+    }
+    else {
+        elm.disabled = true;
     }
 }
 
 function comparePwrd() {
-    let pwrdField = document.querySelector("#inPassword");
+    let pwrdField = document.querySelector("#password");
     let pwrdConfirm = document.querySelector("#repeatPassword");
-    let labelPwrd = document.querySelector("#labelPwrd");
-    let labelPwrdConfirm = document.querySelector("#labelPwrdConfirm");
+    let labelPwrd = document.querySelector("#passlabel");
+    let labelPwrdConfirm = document.querySelector("#passlabelconfirm");
 
     if (pwrdField.value != '' && pwrdConfirm.value != '') {
         if (pwrdField.value != pwrdConfirm.value) {
@@ -29,3 +29,4 @@ function comparePwrd() {
         }
     }
 }
+
