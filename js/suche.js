@@ -1,3 +1,11 @@
+function adjustSubTen(v) {
+    if (v > 9) {
+        return v.toString();
+    } else {
+        return '0' + v.toString();
+    }
+}
+
 function fixDate() {
     let dateUnfor = document.querySelector("#datum_unformatted");
     let dateFor = document.querySelector("#date");
@@ -11,12 +19,4 @@ function fixDate() {
     var newdate = (day + "." + month + "." + year);
 
     dateFor.value = newdate;
-}
-
-function adjustSubTen(v) {
-    if (v > 9) {
-        return v.toString();
-    } else {
-        return '0' + v.toString();
-    }
 }
