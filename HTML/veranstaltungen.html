@@ -78,7 +78,7 @@
                         <div class="form-group row">
                             <label for="inputVeranstaltung" class="col-sm-2 col-form-label">Veranstaltung</label>
                             <div class="col-sm-10">
-                                <select name="Veransaltung" class="form-control" id="inputVeranstaltung" required>
+                                <select name="Veransaltung" class="form-control" id="inputVeranstaltung" tabindex="1" required> 
                                     <option value="" selected>Hauptveranstaltung</option>
                                     <option>Veranstaltung1</option>
                                     <option>Veranstaltung2</option>
@@ -92,23 +92,23 @@
 
                                 <div class="col-sm-10">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="preiskategorie" id="kleinkind" value="option1" checked>
+                                        <input class="form-check-input" type="radio" name="preiskategorie" id="kleinkind" value="option1" tabindex="2" checked>
                                         <label class="form-check-label" for="kleinkind">Kleinkind</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="preiskategorie" id="Schueler" value="option1" checked>
+                                        <input class="form-check-input" type="radio" name="preiskategorie" id="Schueler" value="option2" tabindex="3" checked>
                                         <label class="form-check-label" for="schueler">Schüler</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="preiskategorie" id="student" value="option1" checked>
+                                        <input class="form-check-input" type="radio" name="preiskategorie" id="student" value="option3" tabindex="4" checked>
                                         <label class="form-check-label" for="student">Student</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="preiskategorie" id="erwachsener" value="option1" checked>
+                                        <input class="form-check-input" type="radio" name="preiskategorie" id="erwachsener" value="option4" tabindex="5" checked>
                                         <label class="form-check-label" for="erwachsener">Erwachsener</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="preiskategorie" id="rentner" value="option1" checked>
+                                        <input class="form-check-input" type="radio" name="preiskategorie" id="rentner" value="option5" tabindex="6" checked>
                                         <label class="form-check-label" for="rentner">Rentner</label>
                                     </div>
                                 </div>
@@ -116,33 +116,35 @@
                             <div class="form-group row">
                                 <label for="outpotdate" class="col-sm-2 col-form-label">Zeitraum von:</label>
                                 <div class="col-sm-10">
-                                    <input type="datetime-local" class="form-control" id="dateeoutpotdateingabe" name="outpotdate" size=20 required/>
+                                    <input type="datetime-local" class="form-control" id="dateeoutpotdateingabe" name="outpotdate" size=20 tabindex="7" required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Zeitraum bis:</label>
                                 <div class="col-sm-10">
-                                    <input type="datetime-local" class="form-control" id="inputaufenthaltsdatum" name="inputaufenthaltsdatum" size=20 required/>
+                                    <input type="datetime-local" class="form-control" id="inputaufenthaltsdatum" name="inputaufenthaltsdatum" size=20 tabindex="8" required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="Spende" class="col-sm-2 col-form-label">Spende</label>
                                 <div class="col-sm-10">
-                                    <input type="number" class="form-control" id="spende" name="spende" placeholder="Beitrag der Spende in Euro" required/>
+                                    <input type="number" class="form-control" id="spende" name="spende" placeholder="Beitrag der Spende in Euro" tabindex="9" required/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputaufenthaltsdatum" class="col-sm-2 col-form-label">Sitzplatzauswahl</label>
                                 <div class="col-sm-10">
-                                    <img src="../image/großer-saal.jpg" alt="großer-saal" usemap="#image-map">
+                                    <img src="../image/großer-saal.jpg" usemap="#image-map" alt="großerSaal">
+
                                     <map name="image-map">
-                                        <area target="self" alt="Sitzplatz 55" title="Sitzplatz 55" href="#" coords="161,234,145,218" shape="rect">
-                                        <area target="self" alt="Sitzplatz 56" title="Sitzplatz 56" href="#" coords="122,218,135,234" shape="rect">
-                                        <area target="self" alt="Sitzplatz 57" title="Sitzplatz 57" href="#" coords="98,219,114,233" shape="rect">
-                                        <area target="self" alt="Sitzplatz 58" title="Sitzplatz 58" href="#" coords="74,216,90,235" shape="rect">
-                                        <area target="self" alt="Sitzplatz 59" title="Sitzplatz 59" href="#" coords="51,217,64,235" shape="rect">
-                                        <area target="self" alt="Sitzplatz 60" title="Sitzplatz 60" href="#" coords="26,217,43,232" shape="rect">
-                                </map>
+
+                                        <area target="_self" alt="Sitzplatz55" title="Sitzplatz55" href="#" coords="160,234,145,218" shape="rect">
+                                        <area target="_self" alt="Sitzplatz56" title="Sitzplatz56" href="#" coords="122,218,135,234" shape="rect">
+                                        <area target="_self" alt="Sitzplatz57" title="Sitzplatz57" href="#" coords="98,219,114,233" shape="rect">
+                                        <area target="_self" alt="Sitzplatz58" title="Sitzplatz58" href="#" coords="74,216,90,235" shape="rect">
+                                        <area target="_self" alt="Sitzplatz59" title="Sitzplatz59" href="#" coords="51,217,64,235" shape="rect">
+                                        <area target="_self" alt="Sitzplatz60" title="Sitzplatz60" href="#" coords="26,217,43,232" shape="rect">
+                                    </map>
                                 </div>
                             </div>
                             <div class="form-group row">
