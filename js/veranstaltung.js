@@ -34,11 +34,11 @@ function adjustHours(v) {
 }
 
 function checkVonBis() {
-    let zeitraumVon = document.querySelector("#zeitraumVon");
-    let zeitraumBis = document.querySelector("#zeitraumBis");
+    let zeitraumVon = document.querySelector("#outpotdate");
+    let zeitraumBis = document.querySelector("#inputaufenthaltsdatum");
 
     if (zeitraumVon.value > zeitraumBis.value) {
-        if (confirm('Sollen die Zeiten automatisch getauscht werden?')) {
+        if (confirm('Zeiten automatisch tausche?')) {
             switchTimes();
         }
     } else {
@@ -47,52 +47,55 @@ function checkVonBis() {
 }
 
 function switchTimes() {
-    let zeitraumVon = document.querySelector("#zeitraumVon");
-    let zeitraumBis = document.querySelector("#zeitraumBis");
+    let outpotdate = document.querySelector("#outpotdate");
+    let inputaufenthaltsdatum = document.querySelector("#inputaufenthaltsdatum");
 
-    var dateTime1 = zeitraumVon.value;
-    var dateTime2 = zeitraumBis.value;
+    var dateTime1 = outpotdate.value;
+    var dateTime2 = inputaufenthaltsdatum.value;
 
-    zeitraumVon.value = dateTime2;
-    zeitraumBis.value = dateTime1;
+    outpotdate.value = dateTime2;
+    inputaufenthaltsdatum.value = dateTime1;
 }
+
+
 
 function selectPaymentMethod() {
-    let paymentRechnung = document.querySelector("#zahlungRechnung");
-    let paymentVisa = document.querySelector("#zahlungVisa");
-    let paymentMaster = document.querySelector("#zahlungMastercard");
+    let rechnung = document.querySelector("#rechnung");
+    let visa = document.querySelector("#visa");
+    let mastercard = document.querySelector("#mastercard");
 
-    let fsRechnung = document.querySelector("#fsRechnung");
-    let fsCard = document.querySelector("#fsKarte");
+    let Rechnungbsp = document.querySelector("#Rechnungbsp");
+    let Kartenzahlung = document.querySelector("#Kartenzahlung");
 
-    let cardRechnung = document.querySelector("#cardRechnung");
-    let cardKarte = document.querySelector("#cardKarte");
+    let karteR = document.querySelector("#karteR");
+    let KarteVersteckt = document.querySelector("#KarteVersteckt");
 
-    if (paymentRechnung.checked == true) {
-        cardRechnung.hidden = false;
-        cardKarte.hidden = true;
-        fsRechnung.disabled = false;
-        fsCard.disabled = true;
+    if (rechnung.checked == true) {
+        karteR.hidden = false;
+        KarteVersteckt.hidden = true;
+        Rechnungbsp.disabled = false;
+        Kartenzahlung.disabled = true;
     } else {
-        cardRechnung.hidden = true;
-        cardKarte.hidden = false;
-        fsRechnung.disabled = true;
-        fsCard.disabled = false;
+        karteR.hidden = true;
+        KarteVersteckt.hidden = false;
+        Rechnungbsp.disabled = true;
+        Kartenzahlung.disabled = false;
     }
-}
 
-function isDateCorrect() {
-    let inputMonat = document.querySelector("#karteMonat");
-    let inputJahr = document.querySelector("#karteJahr");
-    if (inputMonat.value != '' && inputJahr.value != '') {
-        var today = new Date();
-        if (today.getFullYear > inputJahr.value || (today.getFullYear == inputJahr.value && today.getMonth > inputMonat.value)) {
-            if (confirm('Datum der Karte abgelaufen!')) {
+    function isDateCorrect() {
+        let inputMonat = document.querySelector("#MonatderKarte");
+        let inputJahr = document.querySelector("#inputJahr");
+        if (inputMonat.value != '' && inputJahr.value != '') {
+            var today = new Date();
+            if (today.getFullYear > inputJahr.value || (today.getFullYear == inputJahr.value && today.getMonth > inputMonat.value)) {
+                if (confirm('Karte abgelaufen!')) {
 
+                }
+                inputMonat.value = '';
+                inputJahr.value = '';
+                inputMonat.focus();
             }
-            inputMonat.value = '';
-            inputJahr.value = '';
-            inputMonat.focus();
         }
     }
+
 }
