@@ -122,11 +122,14 @@
                     <h5>Deutsche Bahn-Suche:</h5>
                     <label>Startbahnhof </label>
                     <input type="text" name="ld" size="20" placeholder="Startbahnhof" />
-                    <input type="text" name="seqnr" size="20" placeholder="Zielbahnhof" />
-                    <input type="time" name="time" size="20" placeholder="Uhrzeit" />
-                    <input type="text" name="date" size="20" placeholder="Datum DD.MM.JJJJ" />
-                    <input type="radio" id="ab" name="option" size="20" placeholder="Ab" /><label for="ab">Ab</label>
-                    <input type="radio" id="an" name="option" size="20" placeholder="An" /><label for="an">An</label>
+                    <input type="time" name="time" size="20" />
+                    <input type="date" name="datum_unformatted" id="date_unformatted" size="20" onfocusout="fixDate()" />
+                    <input type="text" name="date" id="date" size="20" hidden/>
+                    <input type="radio" id="ab" name="timesel" size="20" value="depart" />
+                    <label for="ab">Abfahrt</label>
+                    <input type="radio" id="an" name="timesel" size="20" value="arrive" />
+                    <label for="an">Ankunft</label>
+                    <input type="hidden" id="start" name="start" value="1" />
                     <input type="submit" value="Suchen" />
                 </form>
             </article>
