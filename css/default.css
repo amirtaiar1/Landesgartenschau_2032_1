@@ -243,3 +243,53 @@ h6 {
 .form-group {
     margin-bottom: 5px;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+.modal_container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1 px solid rgba(0, 0, 0, .2);
+    border-radius: 0.3 rem;
+    outline: 0;
+}
+
+.modal-dialog-scrollable .modal-body {
+    overflow-y: auto;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+#sitzplatz {
+    height: 250px;
+    width: 420px;
+}

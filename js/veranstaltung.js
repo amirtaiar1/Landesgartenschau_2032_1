@@ -1,3 +1,27 @@
+let myArray=  [
+    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1'},
+    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1'},
+    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1'},
+    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1'}
+]
+
+buildTable(myArray)
+
+function buildTable(data){
+    let table = document.getElementById('myTable')
+
+    for (let i = 0; i <data.length; i++){
+        let row = <tr>
+            <td>$(data[i].ZeitraumVon)</td>
+            <td>$(data[i].ZeitraumBis)</td>
+            <td>$(data[i].ZeitraumVon)</td>
+            <td>$(data[i].ZeitraumVon)</td>
+        </tr>
+        table.innerHTML += row
+    }
+}
+
+
 function initFunction() {
     let zeitraumVon = document.querySelector("#zeitraumVon");
     let zeitraumBis = document.querySelector("#zeitraumBis");
