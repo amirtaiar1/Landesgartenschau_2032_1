@@ -24,11 +24,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/default.css">
     <script src="../js/registrierung.js"></script>
+    <script src="../js/veranstaltung.js"></script>
 
 
 </head>
 
-<body class="body">
+<body class="body" onload="buildTable()">
     <div class="container">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -71,20 +72,19 @@
             <!-- Hauptteil-->
             <div>
                 <h2>meine Buchungen</h2>
-                <table onload="buildTable()" class="table table-striped">
-
+                <table id="tableBuchung"  class="table table-striped">
                     <tr class="bg-info">
-                        <th>Zeitraum</th>
-                        <th>Zeitraum</th>
-                        <th>Zeitraum</th>
-                        <th>Zeitraum</th>
-
-
-
+                        <th>Zeitraum von</th>
+                        <th>Zeitraum bis</th>
+                        <th>Veranstaltung</th>
+                        <th>Preiskategorie</th>
+                        <th>Sitzplatz</th>
+                        <th>Zusatzspende</th>
                     </tr>
                     <tbody id="myTable">
 
                     </tbody>
+                    
                 </table>
             </div>
             <div class="card">

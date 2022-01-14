@@ -1,24 +1,34 @@
 let myArray=  [
-    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1'},
-    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1'},
-    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1'},
-    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1'}
+    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1', 'Preiskategorie': 'Erwachsen', 'Sitzplatz' : '56', 'Zusatzspende: ' : '100'},
+    
+    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1', 'Preiskategorie': 'Erwachsen', 'Sitzplatz' : '56', 'Zusatzspende: ' : '100'},
+    
+    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1', 'Preiskategorie': 'Erwachsen', 'Sitzplatz' : '56', 'Zusatzspende: ' : '100'},
+    
+    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1', 'Preiskategorie': 'Erwachsen', 'Sitzplatz' : '56', 'Zusatzspende: ' : '100'},
+    
+    {'ZeitraumVon' : '13:00', 'ZeitraumBis' : '12:00', 'Veranstaltung' : 'Veranstaltung1', 'Preiskategorie': 'Erwachsen', 'Sitzplatz' : '56', 'Zusatzspende: ' : '100'}
 ]
 
 buildTable(myArray)
 
 function buildTable(data){
-    let table = document.getElementById('myTable')
-
-    for (let i = 0; i <data.length; i++){
-        let row = <tr>
-            <td>$(data[i].ZeitraumVon)</td>
-            <td>$(data[i].ZeitraumBis)</td>
-            <td>$(data[i].ZeitraumVon)</td>
-            <td>$(data[i].ZeitraumVon)</td>
-        </tr>
-        table.innerHTML += row
+    let table = document.querySelector('#myTable');
+    
+    console.log(data.length);
+    let table12="";
+    for (let i = 0; i <data.length; i++)
+    {
+        
+        let row = "<tr><td>" +(data[i].ZeitraumVon)+"</td><td>"+
+        (data[i].ZeitraumBis) + "</td><td>" + (data[i].Veranstaltung)+"</td><td>" + (data[i].Preiskategorie)+"</td><td>"+ (data[i].Sitzplatz)+"</td><td>" + (data[i].Zusatzspende)+"</td></tr>";
+        console.log(row);
+        table += row;
+        
+        table.innerHTML += row;
     }
+    console.log(table12);
+    //document.getElementById("tableBuchung").innerHTML = "<tr><td>TEST</tr></td>";
 }
 
 
