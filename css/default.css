@@ -293,3 +293,11 @@ h6 {
     height: 250px;
     width: 420px;
 }
+
+
+/* map*/
+#map 
+{ 
+    height: 750px; 
+    width: 100%;
+}
