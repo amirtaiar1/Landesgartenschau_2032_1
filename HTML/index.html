@@ -74,22 +74,21 @@
 
             <div class="container_media">
 
-                <video class="vid" muted controls>
+                <video class="vid" id="vid" muted controls>
                     <source src="../video/big_buck_bunny.mp4" type="video/mp4">
                     
                 </video>
-                <div>
-                    <button onclick="playVideo()">Video Starten</button>
-                    <button onclick="pauseVideo()">Video Stop</button>
-                </div>
                 <div class="container_img">
                     <img class="rose" src="../image/Blume.jpg" alt="Blume">
                     <div class="centered">
                         <p>„Schau tief in die Natur, und dann wirst du alles besser verstehen.“ </p>
                         <p>Albert Einstein</p>
                     </div>
-                </div>
-                
+                </div>               
+            </div>
+            <div>
+                <button onclick="Play()" id="playbtn">Video Starten</button>
+                <button onclick="pauseVideo()" id="pausebtn">Video Stop</button>
             </div>
             <div class="News_area">
                 <div class="sidebar">
