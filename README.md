@@ -8,7 +8,7 @@
 
 ![This is an image](/image/Logo.png)
 
-Mein Name ist **Amir Taiari** & ich studiere derzeit Wirtschaftsinformatik! :) 
+Mein Name ist **Amir Taiari** & ich studiere derzeit Wirtschaftsinformatik plus Pädagogik
 Mithilfe dieser Webseite möchte ich Sie auf unsere Veranstaltung aufmerksam machen.
 
 ## Konzept
